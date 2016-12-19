@@ -1,0 +1,187 @@
+/* Global Variables */
+:root {
+  --radius: 7px;
+  --animation_length: 3s;
+  --text_colour:white;
+  --background_colour: #DFDFDF;
+  --image_border_colour: #F0F0F0;
+  --font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: var(--background_colour);
+    font-family: var(--font);
+    padding: 20px;
+
+    -webkit-animation-name: background_animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: var(--animation_length); /* Safari 4.0 - 8.0 */
+    animation-name: background_animation;
+    animation-duration: var(--animation_length);
+
+}
+
+h1, h2, h3, p { 
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+    color: #2A2A2A;
+    font-family: var(--font);
+    -webkit-animation-name: fade_animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: var(--animation_length); /* Safari 4.0 - 8.0 */
+    animation-name: fade_animation;
+    animation-duration: var(--animation_length);
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes background_animation {
+    from {background-color: #555;}
+    to {background-color: var(--background_colour);}
+}
+
+/* Standard syntax */
+@keyframes background_animation {
+    from {background-color:#555;}
+    to {background-color: var(--background_colour);}
+}
+
+main {
+    background-color: #666;
+    border-style: solid;
+    border-width: 15px;
+    border-color: #666;
+    padding: 5px;
+    border-radius: var(--radius);
+    position: relative;
+
+    -webkit-animation-name: main_animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: var(--animation_length); /* Safari 4.0 - 8.0 */
+    animation-name: main_animation;
+    animation-duration: var(--animation_length);
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes main_animation {
+    from {
+        background-color: #555;
+        border-color: #555;
+    }
+    to {
+        background-color: #666;
+        border-color: #666;
+    }
+}
+
+/* Standard syntax */
+@keyframes main_animation {
+    from {
+        background-color: #555;
+        border-color: #555;
+    }
+    to {
+        background-color: #666;
+        border-color: #666;
+    }
+}
+
+topHeading {
+    display: block;
+    text-align: center;
+    color: var(--text_colour);
+    font-size: 40px;
+    margin: 3px; 
+    padding: 5px;  
+    letter-spacing: 2px;
+}
+
+byline  {
+    display: block;
+    text-align: center;
+    color: var(--text_colour);
+    font-size: 10px;
+    margin: 3px; 
+    padding: 5px;  
+    letter-spacing: 2px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0px;
+    overflow: hidden;
+    max-width: 408px;   
+    border-radius: var(--radius);
+    background-color: #555;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: var(--text_colour);
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 22px;
+}
+
+.flickr:hover {
+    background-color: #ff0084;
+}
+
+.resume:hover {
+    background-color: #b5c73e;
+    border-top-right-radius:  var(--radius);
+    border-bottom-right-radius:  var(--radius);
+}
+
+.linkedin:hover {
+    background-color: #007bb5;
+}
+
+.github:hover {
+    background-color: #333;
+    border-top-left-radius:  var(--radius);
+    border-bottom-left-radius:  var(--radius);
+}
+
+img {
+    border: 5px solid var(--image_border_colour);
+    border-radius: 4px;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+    overflow: hidden;
+    display: inline;
+    clear: left;
+    float: left;
+
+    -webkit-animation-name: fade_animation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: var(--animation_length); /* Safari 4.0 - 8.0 */
+    animation-name: fade_animation;
+    animation-duration: var(--animation_length);
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fade_animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+       }
+}
+
+/* Standard syntax */
+@keyframes fade_animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
