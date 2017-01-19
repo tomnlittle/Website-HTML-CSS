@@ -93,12 +93,11 @@ img {
     border: 5px solid var(--image_border_colour);
     border-radius: 4px;
     padding: 0px;
-    margin: 10px 15px;
+    margin: 15px auto;
     box-shadow: var(--shadow);
    
     overflow: hidden;
-    clear: right;
-    float: left;
+    display: block;
 }
 
 .flickr:hover {
@@ -128,7 +127,7 @@ container {
 
 box {
     float: left;    
-    margin: 10px 15px; 
+    margin: 15px 15px; 
 }
 
 box.background {  
@@ -181,6 +180,10 @@ box box.background:hover {
 
 
 container:hover box:not(:hover) {
+    filter: blur(2px);
+}
+
+container:hover box.background:not(:hover) {
     filter: blur(2px);
 }
 
