@@ -1,0 +1,18 @@
+/*
+Styles file for my image 
+*/
+
+
+img {
+    border: 5px solid var(--image_border_colour);
+    border-radius: 4px;
+    padding: 0px;
+    margin: 15px auto;
+    box-shadow: var(--shadow);
+   
+    overflow: hidden;
+    display: block;
+    
+    max-width: 20%; 
+    max-height: auto; 
+}

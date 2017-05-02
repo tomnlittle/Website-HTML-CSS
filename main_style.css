@@ -1,0 +1,29 @@
+:root {
+  --radius: 2px;
+  --animation_length: 0s;
+  --text_colour:#F0F0F0;
+  --background_colour: #222;
+  --image_border_colour: white;
+  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  --font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: var(--background_colour);
+    background-image: url("background.jpg");
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6, p { 
+    padding-bottom: 0.3em;
+    padding-left: 0.5em;
+    padding-right:0.5em;
+
+    color: var(--text_colour);
+    font-family: var(--font);
+    font-weight: normal;    
+}
